@@ -1,0 +1,229 @@
+/*------------------------------------*/
+/*Basic Setup*/
+/*------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(224, 224, 224);
+  min-height: 100vh;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+::selection {
+  background-color: #27ae60;
+  color: #fff;
+}
+/*------------------------------------*/
+/*Resuable Compnents*/
+/*------------------------------------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/*------------------------------------*/
+/*HEADER*/
+/*------------------------------------*/
+
+header {
+  background-color: #27ae60;
+  /* height: 100vh; */
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 0px;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li:hover {
+  border-bottom: 2px solid #fff;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.icon-header {
+  display: inline-block;
+  font-size: 130%;
+  color: #fff;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 6px;
+}
+/*------------------------------------*/
+/*Shopping Cart*/
+/*------------------------------------*/
+.shopping-cart {
+  width: 900px;
+  /* min-height: 100vh; */
+  margin: 80px auto;
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #e1e8ee;
+  padding: 20px 30px;
+  color: #5e6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top: 1px solid #e1e8ee;
+  border-bottom: 1px solid #e1e8ee;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #27ae60;
+  color: #000;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #e67e22;
+}
+
+.image {
+  margin-right: 50px;
+}
+
+.image img {
+  width: 150px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+.description p {
+  font-size: 20px;
+  color: #43484d;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.quantity {
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.quantity input {
+  border: 1px solid #27ae60;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+  font-size: 20px;
+  color: #1d914d;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button[class*='btn'] {
+  width: 30px;
+  height: 30px;
+  background-color: #27ae60;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.minus-btn {
+  margin-left: 20px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+.plus-btn {
+  margin-right: 20px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+  background-color: #e67e22;
+  box-shadow: 0px 1px #b3611a;
+}
+
+.total-price {
+  width: 85px;
+  padding-top: 35px;
+  text-align: center;
+  font-size: 20px;
+  color: #43484d;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.order-button {
+  width: 300px;
+  margin: 8px 0; 
+  border: 1px solid #2ecc71;
+  border-radius: 3px;
+  background-color: #2ecc71;
+  font-weight: 400;
+  transition: background-color 0.2s, box-shadow 0.2s, border 0.2s;
+}
+
+.order-button:hover {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  box-shadow: 1px 1px #b3611a;
+}
