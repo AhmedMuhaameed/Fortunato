@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="../../vendors/css/normalize.css" />
+        <link rel="stylesheet" href="../../vendors/css/grid.css" />
+        <link rel="stylesheet" href="../../vendors/css/ionicons.min.css" />
+        <link rel="stylesheet" href="../../resources/css/profile.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="row">
+                <img src="../../resources/img/Logo-white.png" alt="Fortunato Logo" class="logo" />
+                <ul class="main-nav">
+                    <li>
+                        <i class="ion-ios-cart icon-header"></i>
+                        <a href="../cart/index.html">Cart</a>
+                    </li>
+                    <li>
+                        <i class="ion-android-exit icon-header"></i>
+                        <a href="javascript:logout()">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="content">
+                <div class="right-side">
+                    <img src="../../resources/img/IMG-20210911-WA0002.jpg" class="personal" />
+                    <h2 id="name">Mohamed Hossam</h2>
+                    <p id="email">Mohamed.hossam@gmail.com</p>
+                </div>
+                <div class="left-side">
+                    <form class="section-form">
+                        <div class="form-input">
+                            <label for="telephone">Phone:</label>
+                            <input type="tel" placeholder="Enter Your Telephone" id="telephone" />
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-input">
+                            <label for="adress">Address:</label>
+                            <input type="text" placeholder="Enter Your Address" id="address" />
+                        </div>
+                        <div class="form-input">
+                            <button class="btn" id="save">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="../../resources/js/profile.js"></script>
+    </body>
+</html>

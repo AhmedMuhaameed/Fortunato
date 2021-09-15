@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign IN Page</title>
+        <link rel="stylesheet" href="../../vendors/css/normalize.css" />
+        <link rel="stylesheet" href="../../vendors/css/grid.css" />
+        <link rel="stylesheet" href="../../vendors/css/ionicons.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../../resources/css/signin.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="row">
+                <img src="../../resources/img/Logo-white.png" alt="Fortunato Logo" class="logo" />
+                <ul class="main-nav">
+                    <li>
+                        <i class="ion-android-home icon-header"></i>
+                        <a href="../home/index.html">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-content">
+                <form>
+                    <img src="../../resources/img/Logo-green.png" class="logo-form" />
+                    <div class="form-input">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" id="email" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-input">
+                        <input type="password" name="password" id="password" placeholder="Enter Your Password" id="pass" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-input">
+                        <button class="btn" id="sub">Login</button>
+                    </div>
+
+                    <p class="link">Don't Have Account? <a  href="../signup/signup.html">Sign up</a></p>
+                </form>
+            </div>
+        </main>
+        <script src="../../resources/js/login.js"></script>
+    </body>
+</html>

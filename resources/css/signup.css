@@ -1,57 +1,143 @@
+/*------------------------------------*/
+/*Basic Setup*/
+/*------------------------------------*/
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Lato", "Arial", "sans-serif";
-  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100hv;
+  background-color: rgb(224, 224, 224);
+}
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+::selection {
+  background-color: #27ae60;
+  color: #fff;
+}
+/*------------------------------------*/
+/*Resuable Compnents*/
+/*------------------------------------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/*------------------------------------*/
+/*HEADER*/
+/*------------------------------------*/
+
+header {
+  background-color: #27ae60;
+  /* height: 100vh; */
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 0px;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li:hover {
+  border-bottom: 2px solid #fff;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.icon-header {
+  display: inline-block;
+  font-size: 130%;
+  color: #fff;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 6px;
+}
+/*------------------------------------*/
+/*Main Content*/
+/*------------------------------------*/
+
+main {
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/back-login.jpg);
   background-size: cover;
+  height: 85vh;
 }
-form {
-  margin-top: 50px;
+.main-content {
+  margin: 0 auto;
+}
+
+.logo-form {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-input {
+  margin-bottom: 40px;
   text-align: center;
 }
-input {
-  display: block;
-  width: 350px;
-  height: 40px;
-  margin: 20px;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  border-bottom: 1px solid #2ecc71;
+
+.form-input input {
+  width: 300px;
+  padding: 8px;
   background: transparent;
-}
-button {
-  width: 350px;
-  height: 40px;
-  font-size: 20px;
-  color: #000000;
   border: none;
-  margin-top: 20px;
-  transition: 0.4s ease-in-out;
-}
-form h1 {
-  margin-bottom: 30px;
+  border-bottom: 1px solid #2ecc71;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center; 
 }
 ::placeholder {
-  color: rgba(255, 255, 255, 0.911);
+  color: #fff;
+  text-transform: capitalize;
 }
-button:hover {
-  background: #2ecc71;
-  color: #000000;
+
+button {
+  border-radius: 5px;
+  background-color: #27ae60;
+  padding:5px;
+  width: 300px;
+  transition:background-color 0.2s
 }
-.log-image {
-  width: 100%;
-  height: 33%;
-  justify-content: center;
-  display: flex;
-  margin-top: -20px;
-  margin-bottom: -15px;
+button:hover{
+  background-color:#e67e22;
 }
+.invalid-feedback {
+  margin: 8px auto;
+  width: 300px;
+  text-align: center;
+  color: #fe8b8e;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
