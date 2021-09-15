@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../vendors/css/normalize.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../vendors/css/normalize.css" />
         <link rel="stylesheet" href="../../vendors/css/grid.css" />
         <link rel="stylesheet" href="../../vendors/css/ionicons.min.css" />
-    <link rel="stylesheet" href="../../resources/css/signup.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" />
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="row">
-            <img src="../../resources/img/Logo-white.png" alt="Fortunato Logo" class="logo" />
-            <ul class="main-nav">
-                <li>
-                    <i class="ion-android-home icon-header"></i>
-                    <a href="../home/index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="main-content">
-            <form>
-                <img src="../../resources/img/Logo-green.png" class="logo-form" />
-                <div class="form-input">
-                    <input type="text" name="Fullname" placeholder="enter your name" id="name">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="form-input">
-                    <input type="email" name="email" placeholder="enter your email" id="email">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="form-input">
-                    <input type="password" name="password" placeholder="enter your password" id="pass">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="form-input">
-                    <input type="password" name="confirmpassword" placeholder="confirm your password" id="pass2">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="form-input">
-                    <button class="btn" id="sub">Login</button>
-                </div>
-            </form>
-        </div>
-    </main>
-    <script src="../../resources/js/signup.js"></script>
-</body>
+        <link rel="stylesheet" href="../../resources/css/signup.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="/resources/favicons/site.webmanifest" />
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Signup</title>
+    </head>
+    <body>
+        <header>
+            <nav class="row">
+                <img src="../../resources/img/Logo-white.png" alt="Fortunato Logo" class="logo" />
+                <ul class="main-nav">
+                    <li>
+                        <i class="ion-android-home icon-header"></i>
+                        <a href="../home/index.html">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-content">
+                <form>
+                    <img src="../../resources/img/Logo-green.png" class="logo-form" />
+                    <div class="form-input">
+                        <input type="text" name="Fullname" placeholder="enter your name" id="name" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-input">
+                        <input type="email" name="email" placeholder="enter your email" id="email" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-input">
+                        <input type="password" name="password" placeholder="enter your password" id="pass" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-input">
+                        <input type="password" name="confirmpassword" placeholder="confirm your password" id="pass2" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-input">
+                        <button class="btn" id="sub">Login</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="../../resources/js/signup.js"></script>
+    </body>
 </html>
